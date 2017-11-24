@@ -1,0 +1,86 @@
+@font-face{
+    font-family: tagsxtreme;
+    src: url("../fonts/TagsXtreme2.ttf");
+}
+.logo{
+    font-family: tagsxtreme;
+    font-size: 3.0em;
+    color: crimson;
+    text-align: center;
+}
+.logo:hover{
+    color: lightgray;
+}
+.navbar{
+    width: 100%;
+}
+.nav-item{
+    margin-left: 25px;
+
+}
+.nav-item>a{
+    color: white;
+}
+.nav-item>a:hover{
+    color: lightgrey;
+}
+.dropdown-item{
+    color: white;
+}
+.dropdown-menu{
+    background-color:#353a40;
+}
+.dropdown-item:hover{
+    color: crimson;
+}
+.carousel-item>img{
+    width: 100%;
+    height: 800px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+#aboutMe{
+    text-align: center;
+    min-width: 500px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+    margin-bottom: 0;
+}
+.aboutMe_p{
+    text-align: center;
+    font-family: sans-serif;
+}
+.aboutmeStyle:hover .dropdown{
+    display: block;
+}
+.myHistoryTitle{
+    text-align: center;
+    color: crimson;
+    font-size: 2.1em;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+
+.navbar{
+    position: fixed;
+    z-index: 2;
+}
+#demo{
+    padding-top: 95px;
+}
+.topBtn{
+    padding:10px;
+    position:fixed;
+    top: 90%;
+    right:40px;
+    display:none;
+    font-size: 30px;
+}
+.topBtn:hover{
+    text-decoration:none;
+}
