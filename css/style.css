@@ -78,11 +78,14 @@
     position:fixed;
     top: 90%;
     right:40px;
-    display:block;
+    display:none;
     font-size: 30px;
+    filter: invert(100);
 }
 .topBtn:hover{
     text-decoration:none;
+    filter: none;
+    
 }
 .dirponivel{
     color: rgb(50, 195, 120);
@@ -90,4 +93,12 @@
 .pFooter{
     color: grey;
     font-size: 0.7em;
+}
+#footer{
+    border-top-width: 1px;
+    border-top-color: gray;
+    border-top-style: solid;
+}
+#footer>p{
+    margin-top: 10px;
 }
