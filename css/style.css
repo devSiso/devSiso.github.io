@@ -98,7 +98,48 @@
     border-top-width: 1px;
     border-top-color: gray;
     border-top-style: solid;
+    text-align: center;
 }
 #footer>p{
     margin-top: 10px;
+}
+.myContacts{
+    padding-top: 100px;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+.myContacts>ul{
+    margin: 0 auto auto;
+    list-style-type: none;
+    width: 600px;
+    height: 150px;
+    padding-left: 0px;
+}
+.myContacts>ul>li{
+    width: 200px;
+    float: left;
+}
+#h1Contacts{
+    color: crimson;
+    font-size: 2.1em;
+    font-family: sans-serif;
+}
+.redes{
+    filter: grayscale(100%);
+}
+.redes:hover{
+    filter: grayscale(0%);
+}
+.number{
+    display: none;
+}
+.liPhone:hover .number{
+    display: block;
+}
+.phoneColor:hover{
+    filter: grayscale(100%);
+}
+.liPhone{
+    cursor: pointer;
 }
