@@ -18,7 +18,7 @@ $(document).ready(function () {
         if (posicaoScroll > 540) {
             $('#topBtn').show(); //856
         }
-        if (posicaoScroll == 0) {
+        if (posicaoScroll < 320) {
             $('#topBtn').hide();
         }
     });

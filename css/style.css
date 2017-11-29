@@ -143,3 +143,10 @@
 .liPhone{
     cursor: pointer;
 }
+.carousel-control-prev:hover{
+    background-color: rgba(244, 255, 255, 0.200);
+}
+.carousel-control-next:hover{
+    background-color: rgba(244, 255, 255, 0.200); 
+
+}
