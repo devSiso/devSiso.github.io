@@ -4,7 +4,7 @@ $(document).ready(function () {
     });
 
     $('#myHistoryScroll').click(function () {
-        $('html, body').animate({ scrollTop: $('#scrollHistoryTitle').offset().top }, 1000);
+        $('html, body').animate({ scrollTop: $('#scrollAboutMe').offset().top }, 1000);
     });
     $('#contacts').click(function () {
         $('html, body').animate({ scrollTop: $('#h1Contacts').offset().top }, 1200);
