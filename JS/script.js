@@ -8,7 +8,9 @@ $(document).ready(function () {
     });
     $('#contacts').click(function () {
         $('html, body').animate({ scrollTop: $('#h1Contacts').offset().top }, 1200);
-        $('#number').show(1600);
+    });
+    $('#myExperienceScroll').click(function () {
+        $('html, body').animate({ scrollTop: $('#scrollmyExperience').offset().top }, 1000);
     });
     var posicaoInicial = $('#aboutMe').position().top;
 
