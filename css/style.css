@@ -143,3 +143,21 @@
 .liPhone{
     cursor: pointer;
 }
+.myExperienceH1{
+    color: crimson;
+    font-size: 2.1em;
+    font-family: sans-serif;
+}
+.myExperienceDiv{
+    text-align: center;
+    min-width: 500px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 0;
+}
+.pJavaScript{
+    font-style: inherit;
+    font-size: 1.3em;
+}
