@@ -222,6 +222,7 @@
     margin-bottom: 10px;
     margin-right: 5px;
     margin-left: 5px;
+    display: none;
 }
 .modalButtons{
         width: 100%;
@@ -248,4 +249,27 @@
 .modalButtons{
     position: relative;
     overflow: hidden;
+}
+.carousel{
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+.carousel-inner{
+    width: 100%;
+}
+html{
+    width: 100%;
+}
+.carousel-item{
+    width: 100%;
+}
+.slide{
+    width: 100%;
+}
+#demo{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
 }
