@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    modalImg = document.getElementById("modalImg");
     $('#topBtn').click(function () {
         $('.card').hide(500);
         $('html, body').animate({ scrollTop: 0 }, 900);
@@ -8,6 +9,7 @@ $(document).ready(function () {
     $("#logoHome").click(function (){
         $('html, body').animate({scrollTop: 0 }, 900);
         $('.card').hide(900);
+        $(".momentsTitle").hide(900);
     });
 
     $('#myHistoryScroll').click(function () {
@@ -34,9 +36,43 @@ $(document).ready(function () {
         if (posicaoScroll < 320) {
             $('#topBtn').hide();
         }
-        if(posicaoScroll > 1260){
+        if(posicaoScroll > 1320){
             $('.card').show(1200);
+            $(".momentsTitle").show(1200);
         }
+    });
+    $("#modalMD10").click(function(){
+        $("#exampleModal .modal-title").html("1ª Melhor de 10");
+        modalImg.src = "imagens/primeiramd10Oficial.jpg";
+
+    });
+    $("#modalBeto").click(function(){
+        $("#exampleModal .modal-title").html("Viagem ao Beto Carrero World");
+        modalImg.src = "imagens/beto.jpeg";
+    });
+    $("#modalMarcha").click(function(){
+        $("#exampleModal .modal-title").html("Evento Musical Cristao: Marcha para Jesus");
+        modalImg.src = "imagens/marcha.jpeg";
+    });
+    $("#modalJanta").click(function(){
+        $("#exampleModal .modal-title").html("Janta com os brother");
+        modalImg.src = "imagens/jantacomOsbroder.jpg";
+    });
+    $("#modalPenta").click(function(){
+        $("#exampleModal .modal-title").html("1º Pentakill em partida ranqueada");
+        modalImg.src = "imagens/primeiropenta.jpeg";
+    });
+    $("#modalShopping").click(function(){
+        $("#exampleModal .modal-title").html("Role no Shopping");
+        modalImg.src = "imagens/roleNoShopping.jpg";
+    });
+    $("#modalSkate").click(function(){
+        $("#exampleModal .modal-title").html("Role de skate com meus parceiros");
+        modalImg.src = "imagens/roledeskt.jpg";
+    });
+    $("#modalTattoo").click(function(){
+        $("#exampleModal .modal-title").html("Minha primeira tatuagem");
+        modalImg.src = "imagens/tattoo.png";
     });
 });
 

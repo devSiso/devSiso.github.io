@@ -117,11 +117,14 @@
         </div>
     </div>
     </div>
-    <a id="momentAncora"></a>
+    <div id="momentWT">
+        <h1 class="momentsTitle">Moment$</h1>
+    <a id="momentAncora">
+    </a>
     <ul id="momentsList" class="card-deck">
         <li class="card momentCard" >
             <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#modalCard-1" class="modalButtons">
+                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons" id="modalMD10">
                 <img class="card-img-top" src="imagens/primeiramd10Oficial.jpg" alt="card img cap">
                 </button>
                 <div class="card-body card-front">
@@ -136,7 +139,7 @@
         </li>
         <li class="card momentCard">
             <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons">
+                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons" id="modalBeto">
                 <img class="card-img-top" src="imagens/beto.jpeg" alt="card img cap">
                 </button>
                 <div class="card-body card-front">
@@ -151,7 +154,7 @@
         </li>
         <li class="card momentCard">
             <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons">
+                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons" id="modalMarcha">
                 <img class="card-img-top" src="imagens/marcha.jpeg" alt="card img cap">
                 </button>
                 <div class="card-body card-front">
@@ -165,7 +168,7 @@
         </li>
         <li class="card momentCard">
             <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons">
+                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons" id="modalJanta">
                 <img class="card-img-top" src="imagens/jantacomOsbroder.jpg" alt="card img cap">
                 </button>
                 <div class="card-body card-front">
@@ -179,7 +182,7 @@
         </li>
         <li class="card momentCard">
             <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons">
+                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons" id="modalPenta">
                 <img class="card-img-top" src="imagens/primeiropenta.jpeg" alt="card img cap">
                 </button>
                 <div class="card-body card-front">
@@ -193,7 +196,7 @@
         </li>
         <li class="card momentCard">
             <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons">
+                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons" id="modalShopping">
                 <img class="card-img-top" src="imagens/roleNoShopping.jpg" alt="card img cap">
                 </button>
                 <div class="card-body card-front">
@@ -207,7 +210,7 @@
         </li>
         <li class="card momentCard">
             <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons">
+                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons" id="modalSkate">
                 <img class="card-img-top" src="imagens/roledeskt.jpg" alt="card img cap">
                 </button>
                 <div class="card-body card-front">
@@ -221,19 +224,20 @@
         </li>
         <li class="card momentCard">
             <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons">
+                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons" id="modalTattoo">
                 <img class="card-img-top" src="imagens/tattoo.png" alt="card img cap">
                 </button>
                 <div class="card-body card-front">
                     <h4 class="card-title">1ª Tatuagem</h4>
                     <small class="card-text">
-                                Minha primeira tatuagem, homenageando meu personagem favorito de uma das séries que mais gosto, Dean Winchester, Cain's Mark.
+                                Minha primeira tatuagem, homenageando meu personagem favorito de uma das séries que mais gosto, Supernatural, Cain's Mark.
                             </small>
 
                 </div>
             </div>
         </li>
     </ul>
+    </div>
     <div class="myContacts">
         <h1 id="h1Contacts" class="myHistoryTitle">Meus Contatos...</h1>
         <ul>
@@ -287,20 +291,20 @@
         <img src="imagens/backtop.png" width="50" height="50">
     </a>
     <!-- Modal -->
-<div class="modal fade" id="modalCard-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">1a Melhor de 10!</h5>
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <img src="imagens/primeiramd10Oficial.jpg" alt="Card 1">
+        <img src="#" id="modalImg">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
