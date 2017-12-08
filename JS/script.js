@@ -1,29 +1,28 @@
 $(document).ready(function () {
     modalImg = document.getElementById("modalImg");
     $('#topBtn').click(function () {
-        $('.card').hide(500);
-        $('html, body').animate({ scrollTop: 0 }, 900);
-        
+        $('html, body').animate({ scrollTop: 0 }, 900);  
     });
 
     $("#logoHome").click(function (){
-        $('html, body').animate({scrollTop: 0 }, 900);
+        $('html, body').animate({scrollTop: 0 }, 1200);
         $('.card').hide(900);
         $(".momentsTitle").hide(900);
     });
 
     $('#myHistoryScroll').click(function () {
-        $('html, body').animate({ scrollTop: $('#scrollAboutMe').offset().top - 60 }, 1000);
+        $('html, body').animate({ scrollTop: $('#scrollAboutMe').offset().top - 60 }, 1200);
     });
     $('#contacts').click(function () {
-        $('html, body').animate({ scrollTop: $('#h1Contacts').offset().top }, 1600);
+        $('html, body').animate({ scrollTop: $('#h1Contacts').offset().top }, 1200);
     });
     $('#scrollMoments').click(function () {
-        $('html, body').animate({ scrollTop: $('#momentAncora').offset().top - 115 }, 1000);
-        $('.card').show(2200);
+        $('html, body').animate({ scrollTop: $('#momentAncora').offset().top - 115 }, 1300);
+        $('.card').show(1850);
+        $(".momentsTitle").show(1200);
     });
     $('#myExperienceScroll').click(function () {
-        $('html, body').animate({ scrollTop: $('#scrollmyExperience').offset().top - 100 }, 1000);
+        $('html, body').animate({ scrollTop: $('#scrollmyExperience').offset().top - 100 }, 1200);
     });
     var posicaoInicial = $('#aboutMe').position().top;
 
@@ -38,7 +37,7 @@ $(document).ready(function () {
         }
         if(posicaoScroll > 1320){
             $('.card').show(1200);
-            $(".momentsTitle").show(1200);
+            $(".momentsTitle").show(1300);
         }
     });
     $("#modalMD10").click(function(){
