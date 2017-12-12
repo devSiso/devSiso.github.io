@@ -331,8 +331,9 @@ ul{
     color: crimson;
     font-family: heyes;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     display: none;
+    margin-top: 40px;
 }
 #momentWT{
     margin-top: 40px;
@@ -340,4 +341,57 @@ ul{
 @font-face{
     font-family: heyes;
     src: url("../fonts/heyes.ttf");
+}
+.imgTexts {
+    filter: grayscale(100%);
+}
+.imgTexts:hover{
+    filter: grayscale(0%);
+}
+#modaltxt {
+    font-family: heyes;
+    text-align: justify;
+    font-size: 1.4em;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+.bodyMTxt {
+    background-color: beige;
+    width: 100%;
+}
+#logoLol{
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+.theuxma {
+    width: 150px;
+    height: 85px;
+}
+.theuxma > span {
+    margin-top: 10px;
+}
+.lol{
+    background-image: url("../imagens/logoLol.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 35px;
+    height: 35px;
+    float: left;
+    filter: grayscale(100%);
+    margin-bottom: 10px;
+    background-color: white;
+}
+.lol:hover{
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+footer>.nick{
+    float: left;
+    margin-left: 15px;
+    display: none;
+    font-family: heyes;
+    font-size: 1.4em;
 }

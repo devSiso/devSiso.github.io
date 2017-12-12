@@ -21,8 +21,18 @@ $(document).ready(function () {
         $('.card').show(1850);
         $(".momentsTitle").show(1200);
     });
+    $('#myTextScroll').click(function () {
+        $('html, body').animate({ scrollTop: $('#textAncora').offset().top - 145 }, 1300);
+        $('.textListCard').show(1850);
+    });
     $('#myExperienceScroll').click(function () {
         $('html, body').animate({ scrollTop: $('#scrollmyExperience').offset().top - 100 }, 1200);
+    });
+    $('#lol').click(function () {
+        var width = 150;
+        var height
+        $('.nick').show(600);
+        window.open("https://br.op.gg/summoner/userName=theuXma", "League of Legends", "scrollbars='no', location=no, directories=no, status=no, menubar=no, toolbar=no, resizable=no width=500 height=600");
     });
     var posicaoInicial = $('#aboutMe').position().top;
 
@@ -36,6 +46,10 @@ $(document).ready(function () {
             $('#topBtn').hide();
         }
         if(posicaoScroll > 1320){
+            $('.textListCard').show(1200);
+            $(".textTitle").show(1300);
+        }
+        if(posicaoScroll > 1900){
             $('.card').show(1200);
             $(".momentsTitle").show(1300);
         }
