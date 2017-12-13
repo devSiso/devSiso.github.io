@@ -232,7 +232,7 @@ p{
     margin-bottom: 10px;
     margin-right: 5px;
     margin-left: 5px;
-    display: none;
+    
 }
 .modalButtons{
         width: 100%;
@@ -329,7 +329,6 @@ ul{
     font-family: heyes;
     text-align: center;
     margin-bottom: 60px;
-    display: none;
     margin-top: 40px;
 }
 #momentWT{
@@ -388,7 +387,7 @@ ul{
 footer>.nick{
     float: left;
     margin-left: 15px;
-    display: none;
     font-family: heyes;
     font-size: 1.4em;
+    display: none;
 }

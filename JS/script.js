@@ -6,8 +6,6 @@ $(document).ready(function () {
 
     $("#logoHome").click(function (){
         $('html, body').animate({scrollTop: 0 }, 1200);
-        $('.card').hide(900);
-        $(".momentsTitle").hide(900);
     });
 
     $('#myHistoryScroll').click(function () {
@@ -18,12 +16,9 @@ $(document).ready(function () {
     });
     $('#scrollMoments').click(function () {
         $('html, body').animate({ scrollTop: $('#momentAncora').offset().top - 115 }, 1300);
-        $('.card').show(1850);
-        $(".momentsTitle").show(1200);
     });
     $('#myTextScroll').click(function () {
         $('html, body').animate({ scrollTop: $('#textAncora').offset().top - 145 }, 1300);
-        $('.textListCard').show(1850);
     });
     $('#myExperienceScroll').click(function () {
         $('html, body').animate({ scrollTop: $('#scrollmyExperience').offset().top - 100 }, 1200);
@@ -44,14 +39,6 @@ $(document).ready(function () {
         }
         if (posicaoScroll < 320) {
             $('#topBtn').hide();
-        }
-        if(posicaoScroll > 1320){
-            $('.textListCard').show(1200);
-            $(".textTitle").show(1300);
-        }
-        if(posicaoScroll > 1900){
-            $('.card').show(1200);
-            $(".momentsTitle").show(1300);
         }
     });
     $("#modalMD10").click(function(){
