@@ -2,470 +2,308 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> S!$0 - WebSite </title>
-    <link rel="shortcut icon" href="32x32milgrau.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+    <title>League of Twitch</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark" id="navScroll">
-        <a class="navbar-brand logo" href="#" id="logoHome">
-            $!$0
+    <div class="navbar" id="navbar">
+        <a class="logo" href="#" id="scroll">
+            <img src="img/zaun_emblem.png" class="imgLogo">
+
+            <p class="navbarTitle">
+                TWITCH
+                <br>
+                <small class="small">
+                    O semeador da peste
+                </small>
+
+            </p>
         </a>
-        <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle aboutmeStyle" href="#" id="navbardrop" data-toggle="dropdown">
-                    About me </a>
 
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" id="myHistoryScroll" href="#"> My History </a>
-                    <a class="dropdown-item" id="myExperienceScroll" href="#"> My Experience </a>
-                    <a class="dropdown-item"  id="myTextScroll" href="#"> My Texts </a>
+        <ul class="menu">
+            <li id="loreScroll">
+                História do Rato
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" id="scrollMoments">
-                    Moments
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" id="contacts">
-                    Contacts </a>
-            </li>
-        </ul>
-    </nav>
-    
-    <div id="demo" class="carousel slide" data-ride="carousel" data-pause="true" ; data-interval="2800">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="imagens/carousel_img3.png" alt="Programação">
-            </div>
-            <div class="carousel-item">
-                <img src="imagens/carousel_img1.jpg" alt="Rap">
-            </div>
-            <div class="carousel-item">
-                <img src="imagens/carousel_img2.jpg" alt="Rua">
-            </div>
-        </div>
-        <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
-
-    </div>
-    <a id="scrollAboutMe"></a>
-    <div id="aboutMe">
-        <h1 class="myHistoryTitle" id="scrollHistoryTitle">Como conheci o WebDevelopment...</h1>
-
-        <p class="aboutMe_p">
-            Olá, me chamo Matheus Cruz, alguns me chamam de $!$0 (Sim, como o dente).
-            <br> Tenho 16 anos, e sempre gostei de programação, com 11 anos tive meu primeiro contato com HTML, eu realmente
-            não investi nisso até então, porém ja tinha visto que gostava daquilo. Quando assisti o seriado Mr.Robot aí sim
-            me interessei ainda mais pela área, então estudei um pouco sobre HTML e .CSS, algum tempo depois apareceu a oportunidade
-            de fazer um curso de Front-End, Através do projeto 'Realiza Digital', oferecido pela Idealiza Urbanismo e seus
-            parceiros, me inscrevi para a prova e acabei me saindo bem, fui aprovado e algumas semanas depois começou o curso
-            e aumentou ainda mais meu interesse pelo desenvolvimento web.
-            <br> Com certeza é a área em que escolhi para atuar.
-        </p>
-        <h1 class="myHistoryTitle"> Sobre mim...</h1>
-        <p class="aboutMe_p">
-            Gosto de passar o tempo ouvindo um bom RAP, ás vezes jogando o famigerado League of Legends, geralmente tiro a manhã pra
-            assistir uns videos de JavaScript no Youtube, minha comida favorita é CARNE! if (vegano == true){ respeitar =
-            true; var amizade += 1; } Esse site sobre mim, é especialmente dedicado para você que vai ser meu amigo, colega,
-            chefe, namorada (Status ==
-            <span class="dirponivel"> DISPONíVEL </span>).
-        </p>
-    </div>
-    <a id="scrollmyExperience"></a>
-    <div class="myExperienceDiv" id="divExperienceScroll">
-        <h1 class="myHistoryTitle" id="experienceScroll"> Minhas experiências: </h1>
-        <p class="myExperienceP">
-            Além do que aprendi ao longo do curso, sobre JavaScript, HTMl e .CSS, também sei tocar alguns instrumentos, como guitarra,
-            violão e baixo, mas de longe o meu favorito, é a bateria. Sou muito curioso então estou sempre assistindo ou
-            pesquisando sobre todo tipo de assunto, atualmente estou cursando o 2º ano do ensino médio, tenho conhecimento
-            digamos que intermediário em inglês, onde minha dificuldade real é a pronúncia, gosto muito de escrever, textos,
-            musicas, e até redações sobre assuntos pré determinados. Na cozinha eu sou um desastre (a menos que seja comida
-            congelada). Vale lembrar que sou um exímio atirador no MOBA League of Legends, domino a técnica do farm (100
-            de farm/minuto), e o KITING (Kito até hecarim).
-
-        </p>
-        <div class="progressDiv">
-            <div class="progress">
-                <p class="pJavaScript">HTML:</p>
-                <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated html-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                    aria-valuemax="100" style="width: 45%">85%</div>
-            </div>
-            <div class="progress">
-                <p class="pJavaScript">CSS:</p>
-                <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated css-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                    aria-valuemax="100" style="width: 40%">80%</div>
-            </div>
-            <div class="progress">
-                <p class="pJavaScript">JavaScript:</p>
-                <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated java-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                    aria-valuemax="100" style="width: 35%">70%</div>
-            </div>
-            <div class="progress">
-                <p class="pJavaScript">League of Legends:</p>
-                <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated league-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                    aria-valuemax="100" style="width: 50%">100%</div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="textCardDIV">
-        <a id="textAncora">
-    </a>
-        <h1 class="momentsTitle textTitle">myText$</h1>
-    <ul id="textList" class="card-deck">
-        <li class="card textListCard" >
-            <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#modalTexts1" class="modalButtons" id="modalSombra">
-                <img class="card-img-top imgTexts" src="imagens/text1.jpg" alt="card img cap">
-                </button>
-                <div class="card-body card-front">
-                    <h4 class="card-title">Sombra de Árvore
-                    </h4>
-                    <small class="card-text">
-                                Quero sentar na sombra da árvore sabendo que eu quem plantei a semente, cê mente pra si mesmo...
-                            </small>
-
-                </div>
-            </div>
-        </li>
-        <li class="card textListCard" >
-            <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#modalTexts2" class="modalButtons" id="modalCruz">
-                <img class="card-img-top imgTexts" src="imagens/text2.jpg" alt="card img cap">
-                </button>
-                <div class="card-body card-front">
-                    <h4 class="card-title"> Cruz no nome
-                    </h4>
-                    <small class="card-text">
-                                A tal da dor que não some, leone, a Cruz tá pesando no ombro e não só no nome, nos falta comunicação na era do drone, o senhor que está no céu não é super homem...
-                            </small>
-
-                </div>
-            </div>
-        </li>
-        <li class="card textListCard" >
-            <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#modalTexts3" class="modalButtons" id="modalMari">
-                <img class="card-img-top imgTexts" src="imagens/text3.jpg" alt="card img cap">
-                </button>
-                <div class="card-body card-front">
-                    <h4 class="card-title">Sobre Mariana
-                    </h4>
-                    <small class="card-text">
-                                Mariana, não só uma Ana que resolveu se aventurar no mar, mari tem tudo a ver com ‘amar’, as vezes seus olhinhos escuros me fazem sentar no muro a observar, que por mais que o navio esteja a naufragar, ela se dispõe a tentar...
-                            </small>
-
-                </div>
-            </div>
-        </li>
-        <li class="card textListCard" >
-            <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#modalTexts4" class="modalButtons" id="modalOpostos">
-                <img class="card-img-top imgTexts" src="imagens/text4.jpg" alt="card img cap">
-                </button>
-                <div class="card-body card-front">
-                    <h4 class="card-title"> Opostos?
-                    </h4>
-                    <small class="card-text">
-                               Eu não sabia e não sei explicar o que senti quando teu corpo veio de encontro ao meu, quando entramos no mesmo ritmo, e que mesmo por pouco tempo fomos tão iguais, tão parecidos, com as mesmas intenções talvez, somos os polos e sabemos disso...
-                            </small>
-
-                </div>
-            </div>
-        </li>
-    </ul>
-    </div>
-    <div id="momentWT">
-        <a id="momentAncora">
-    </a>
-        <h1 class="momentsTitle">Moment$</h1>
-    
-    <ul id="momentsList" class="card-deck">
-        <li class="card momentCard" >
-            <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons" id="modalMD10">
-                <img class="card-img-top" src="imagens/primeiramd10Oficial.jpg" alt="card img cap">
-                </button>
-                <div class="card-body card-front">
-                    <h4 class="card-title">1ª Melhor de 10!
-                    </h4>
-                    <small class="card-text">
-                                High elo
-                            </small>
-
-                </div>
-            </div>
-        </li>
-        <li class="card momentCard">
-            <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons" id="modalBeto">
-                <img class="card-img-top" src="imagens/beto.jpeg" alt="card img cap">
-                </button>
-                <div class="card-body card-front">
-                    <h4 class="card-title">Viagem ao Beto Carrero World
-                    </h4>
-                    <small class="card-text">
-                                Viagem de formatura do Ensino Fundamental, com meus antigos colegas no ano de 2015.
-                            </small>
-
-                </div>
-            </div>
-        </li>
-        <li class="card momentCard">
-            <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons" id="modalMarcha">
-                <img class="card-img-top" src="imagens/marcha.jpeg" alt="card img cap">
-                </button>
-                <div class="card-body card-front">
-                    <h4 class="card-title">Evento Marcha pra Jesus</h4>
-                    <small class="card-text">
-                                Evento religioso na minha cidade no qual toquei bateria com uma banda cristã.
-                            </small>
-
-                </div>
-            </div>
-        </li>
-        <li class="card momentCard">
-            <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons" id="modalJanta">
-                <img class="card-img-top" src="imagens/jantacomOsbroder.jpg" alt="card img cap">
-                </button>
-                <div class="card-body card-front">
-                    <h4 class="card-title">Janta no Capão</h4>
-                    <small class="card-text">
-                                Momento histórico em que junto ao meus amigos Vitor e Gordinho fizemos a pior massa caseira do município Capão do Leão.
-                            </small>
-
-                </div>
-            </div>
-        </li>
-        <li class="card momentCard">
-            <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons" id="modalPenta">
-                <img class="card-img-top" src="imagens/primeiropenta.jpeg" alt="card img cap">
-                </button>
-                <div class="card-body card-front">
-                    <h4 class="card-title">1º Penta Kill</h4>
-                    <small class="card-text">
-                              Meu primeiro pentakill em partida player vs player no League!
-                            </small>
-
-                </div>
-            </div>
-        </li>
-        <li class="card momentCard">
-            <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons" id="modalShopping">
-                <img class="card-img-top" src="imagens/roleNoShopping.jpg" alt="card img cap">
-                </button>
-                <div class="card-body card-front">
-                    <h4 class="card-title">Rolê no Shopping</h4>
-                    <small class="card-text">
-                                Rolê na praia com meus amigos Carlos, Eduardo e Huandel, visitamos a praia do Laranjal e o Shopping Pelotas.
-                            </small>
-
-                </div>
-            </div>
-        </li>
-        <li class="card momentCard">
-            <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons" id="modalSkate">
-                <img class="card-img-top" src="imagens/roledeskt.jpg" alt="card img cap">
-                </button>
-                <div class="card-body card-front">
-                    <h4 class="card-title">Rolê de Skate</h4>
-                    <small class="card-text">
-                               Rolezão de skate com meus brother Yuri e Lucas, regado a vinho e joelho ralado.
-                            </small>
-
-                </div>
-            </div>
-        </li>
-        <li class="card momentCard">
-            <div class="card-front">
-                <button type="button" data-toggle="modal" data-target="#exampleModal" class="modalButtons" id="modalTattoo">
-                <img class="card-img-top" src="imagens/tattoo.png" alt="card img cap">
-                </button>
-                <div class="card-body card-front">
-                    <h4 class="card-title">1ª Tatuagem</h4>
-                    <small class="card-text">
-                                Minha primeira tatuagem, homenageando meu personagem favorito de uma das séries que mais gosto, Supernatural, Cain's Mark.
-                            </small>
-
-                </div>
-            </div>
-        </li>
-    </ul>
-    </div>
-    <div class="myContacts">
-        <h1 id="h1Contacts" class="myHistoryTitle">Meus Contatos...</h1>
-        <ul>
             <li>
-                <a href="https://www.facebook.com/MatheeusCruuz">
-                    <img src="imagens/fb_logo.png" alt="facebook" width="31" height="30" class="redes">
-                </a>
-                <p>/MatheeusCruuz</p>
+                Builds do Rato
             </li>
-
             <li>
-                <a href="https://www.twitter.com/theuzma_">
-                    <img src="imagens/twitter_logo.png" alt="twitter" width="31" height="30" class="redes">
-                </a>
-                <p>@theuzma_</p>
+                Jogadas de Rato
             </li>
-
-            <li class="liPhone" id="liPhone">
-                <a id="phoneID">
-                    <img src="imagens/phone_logo.png" alt="phone" width="31" height="30" class="redes" id="redes">
-                </a>
-                <p>(53) 98110-1353</p>
-            </li>
-
-            <li class="liPhone" id="liPhone">
-                <a id="phoneID" href="https://plus.google.com/u/0/107172052647238187443">
-                    <img src="imagens/gmail_logo.png" alt="gmail" width="31" height="30" class="redes" id="redes">
-                </a>
-                <p>flxvingat@gmail.com</p>
-            </li>
-            <li class="liPhone" id="liPhone">
-                <a id="phoneID" href="https://www.instagram.com/theuzma_">
-                    <img src="imagens/instagram_logo.png" alt="insta" width="31" height="30" class="redes" id="redes">
-                </a>
-                <p>/theuzma_</p>
-            </li>
-            <li class="liPhone" id="liPhone">
-                <a id="phoneID" href="https://www.github.com/devSiso">
-                    <img src="imagens/github_logo.png" alt="discord" width="31" height="30" class="redes" id="redes">
-                </a>
-                <p>/devSiso</li>
         </ul>
+
     </div>
-    <footer id="footer"> <p class="pFooter">
-            devSiso
-            <br> All rights reserved
-        </p>
-        <a href="https://br.op.gg/summoner/userName=theuXma" target="_blank">
-        <div class="lol" id="lol"> 
+    <div class="homePage">
+        <!-- graficos -->
+        <div class="chart">
+            <div class="divChart">
+                <p class="pChart fadeIn">Utility</p>
+                <figure class="chart-one animate">
+                    <svg role="img" xmlns="http://www.w3.org/2000/svg">
+                        <title>Utility</title>
+                        <desc>Utilities for the team</desc>
+                        <circle class="circle-background" />
+                        <circle class="circle-foreground" />
+                    </svg>
+                    <figcaption>25%</figcaption>
+                </figure>
+            </div>
+            <div class="divChart">
+                <p class="pChart fadeIn">Mobility</p>
+                <figure class="chart-two animate">
+                    <svg role="img" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobility</title>
+                        <desc>Movement Speed</desc>
+                        <circle class="circle-background" />
+                        <circle class="circle-foreground" />
+                    </svg>
+                    <figcaption>75%</figcaption>
+                </figure>
+            </div>
+            <div class="divChart">
+                <p class="pChart fadeIn">Damage</p>
+                <figure class="chart-three animate">
+                    <svg role="img" xmlns="http://www.w3.org/2000/svg">
+                        <title>Damage</title>
+                        <desc>Dano de ataque</desc>
+                        <circle class="circle-background" />
+                        <circle class="circle-foreground" />
+                    </svg>
+                    <figcaption>100%</figcaption>
+                </figure>
+            </div>
+            <div class="divChart">
+                <p class="pChart fadeIn">Defense</p>
+                <figure class="chart-four animate">
+                    <svg role="img" xmlns="http://www.w3.org/2000/svg">
+                        <title>Toughness</title>
+                        <desc>Defense</desc>
+                        <circle class="circle-background" />
+                        <circle class="circle-foreground" />
+                    </svg>
+                    <figcaption>25%</figcaption>
+                </figure>
+            </div>
+            <div class="divChart">
+                <p class="pChart fadeIn">Control</p>
+                <figure class="chart-five animate">
+                    <svg role="img" xmlns="http://www.w3.org/2000/svg">
+                        <title>Control</title>
+                        <desc>Control Abilities</desc>
+                        <circle class="circle-background" />
+                        <circle class="circle-foreground" />
+                    </svg>
+                    <figcaption>50%</figcaption>
+                </figure>
+            </div>
         </div>
-        </a>
-       <p class="nick"> theuXma </p>
-       
-    </footer>
-    <a href="#" class="topBtn" id="topBtn">
-        <img src="imagens/backtop.png" width="50" height="50">
-    </a>
-    <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="#" id="modalImg">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
+        <div class="skillsHere" id="skillsHere">
+            <span class="seta-baixo-1" id="arrow"></span>
+            <p class="skillHeretxt">SKILLS</p>
+            <span class="seta-baixo" id="arrow"></span>
+        </div>
+        <div class="areaFrase">
+            <p class="fraseTxt">
+                "Jogaram isto fora? Mas é tão brilhante!"
+            </p>
+        </div>
     </div>
-  </div>
-</div>
+    <!--  Skills  -->
+    <div class="skillsArea" id="skillsArea">
+        <ul class="container">
+            <li class="items passive clicked" id="passive">
+                <p class="skills pSkill">
+                    P
+                </p>
+            </li>
+            <li class="items q" id="qID">
+                <p class="skills qSkill">
+                    Q
+                </p>
+            </li>
+            <li class="items w" id="wID">
+                <p class="skills wSkill">
+                    W
+                </p>
+            </li>
+            <li class="items e" id="eID">
+                <p class="skills eSkill">
+                    E
+                </p>
+            </li>
+            <li class="items r" id="rID">
+                <p class="skills rSkill">
+                    R
+                </p>
+            </li>
+        </ul>
+        <section class="skillsCaption">
+            <div class="skillInfo_p" id="">
+                <h1 class="" id="name_p">
+                    Veneno Mortal
+                </h1>
+                <h1 class="skillName" id="name_q">
+                    Emboscada
+                </h1>
+                <h1 class="skillName" id="name_w">
+                    Tonel de Veneno
+                </h1>
+                <h1 class="skillName" id="name_e">
+                    Contaminar
+                </h1>
+                <h1 class="skillName" id="name_r">
+                    Passando Fogo
+                </h1>
 
-<div class="modal fade" id="modalTexts1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Sombra de Arvore</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body bodyMTxt">
-        <p id="modaltxt">Quero sentar na sombra da árvore sabendo que eu quem plantei a semente, cê mente pra si mesmo, quando acorda e olha no espelho, não se sente mais o mesmo desde que o mundo te pôs de joelho, mas sigo cantando, rimando, vivendo, sempre cansado com o olho vermelho, forçado a ver sorrisos falsos sem o uso de aparelho, minhas rimas herdeiros, tenho muitos, sou um coelho, pai de multidões, Abraão, moises e o mar vermelho, que foi aberto no meio, e só passou quem sabe que a vida é seda sem recheio, e vivemos procurando o re
-cheio, seguimo mamando no seio, da pátria, o sangue e o ódio alheio, dizem que fumar é feio, se eu quisesse beleza fumava mary kay, então continuo fazendo fumaça, porque da minha vida só eu que sei, sensei, ela se insinua e eu a ensinei, que ela é rainha e eu sou rei, fomos pra trás da torre, a cavalo e o bispo me julgou pq eu era pra tá focado no xadrez, mas eu cansei do preto e branco e passei a vez, não terá próxima rodada o jogo terminei, pego minha dama pela mão e vamos pra algum lugar que eu nem sei.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+                <p class="" id="text_p">
+                    Os ataques básicos de Twitch infectam o alvo, causando Dano Verdadeiro a cada segundo.
+                </p>
+                <p class="skill_txt" id="text_q">
+                    <small class="custs"> Custo: 40 de Mana
+                        <br> Alcance: 20</small>
+                    <br>
+                    <br>
+                    <br> Twitch fica Camuflado por um curto período de tempo e recebe Velocidade de Movimento. Ao quebrar a Camuflagem,
+                    Twitch recebe Velocidade de Ataque por um curto período. Quando um campeão inimigo com Veneno Mortal
+                    morre, o Tempo de Recarga de Emboscada é zerado. Twitch fica Camuflado e recebe 10% de Velocidade de
+                    Movimento por 10/11/12/13/14 segundos. Este efeito é triplicado quando ele estiver próximo a um Campeão
+                    inimigo que não puder vê-lo. Twitch recebe 30/35/40/45/50% de Velocidade de Ataque por 5 segundos após
+                    sair de Emboscada. Emboscada é redefinida quando um Campeão morre enquanto estiver afetado por Veneno
+                    Mortal. Furtividade - Camuflagem: Twitch fica oculto enquanto os Campeões inimigos permanecerem fora
+                    de seu raio de detecção. Atacar ou conjurar habilidades encerra a Camuflagem.
+                </p>
+                <p class="skill_txt" id="text_w">
+                    <small class="custs"> Custo: 70 de Mana
+                        <br> Alcance: 950</small>
+                    <br>
+                    <br>
+                    <br> Twitch joga um tonel de veneno que explode em uma área, causando Lentidão e veneno mortal aos alvos.
+                    Twitch arremessa um barril que adiciona um acúmulo de Veneno Mortal a todos os inimigos atingidos, além
+                    de deixar uma nuvem tóxica que persiste por 3 segundos.Inimigos que permanecerem na nuvem têm 25/30/35/40/45%
+                    de sua Velocidade de Movimento reduzida e recebem um acúmulo adicional de Veneno Mortal por segundo.
+                </p>
+                <p class="skill_txt" id="text_e">
+                    <small class="custs"> Custo: 50/60/70/80/90 de Mana
+                        <br> Alcance: 1200</small>
+                    <br>
+                    <br>
+                    <br> Twitch causa ainda mais destruição em inimigos envenenados com uma explosão de suas pestes. Causa 20/35/50/65/80
+                    de Dano Físico mais 15/20/25/30/35
+                    <a class="colorVinte">(+20% de Poder de Habilidade)</a>
+                    <a class="colorZero">(+0)</a> por acúmulo de Veneno Mortal a todos os inimigos próximos afetados por Veneno Mortal. (Dano
+                    máx. dos acúmulos: 0)
+                </p>
+                <p class="skill_txt" id="text_r">
+                    <small class="custs"> Custo: 100 de Mana
+                        <br> Alcance: 1200</small>
+                    <br>
+                    <br>
+                    <br> Twitch desfere o poder total de sua besta, fazendo disparos de grande distância que perfuram todos os
+                    inimigos pegos em seu caminho. Por 5 segundos, Twitch recebe 300 de Alcance de Ataque e 20/30/40 de Dano
+                    de Ataque adicional.Enquanto durar o efeito, seus ataques básicos tornam-se disparos perfurantes que
+                    causam 20% a menos de dano em alvos subsequentes, até o mínimo de 40% de dano. Furtividade - Camuflagem:
+                    Ativar Passando Fogo não encerra Camuflagem.
+                </p>
 
-<div class="modal fade" id="modalTexts2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Cruz no nome</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body bodyMTxt">
-        <p id="modaltxt">A tal da dor que não some, leone, a Cruz tá pesando no ombro e não só no nome, nos falta comunicação na era do drone, o senhor que está no céu não é super homem, se fosse só pelo nome ele já errava, é que eu faço tanta coisa, pensando em nada, minha nave mãe falou que ia buscar mas tá atrasada, eles olharam pra humanidade disseram ultrapassada, aqui tem ódio e sangue, no fim não resta nada, o horizonte tão bonito num é o fim da estrada, o nosso corpo ainda não, mas a alma enterrada, a procura de solução, samba e cervejada, os menino faz um corre vende umas parada, e a cela tá pequena não cabe mais nada, os caixoes em promoção, não acredito em fada, coloquei o pé na lua, lá que é minha casa, a raça do cão que morre é vira lata, o pastor alemão, vive é de terno e de gravata, fugindo da situação através da lata, sonho é prato de comida, não joia de prata, entrou no carro e saiu de fuga alguém anota a placa, a arma no porta-luva, um charuto de rasta, aquela proximidade que nos afasta, meu amigo levou plomo por causa da plata, tu é negro então come toda essas planta, tu é branco e num mora aqui, então te arranca, nois não é de ficar quieto, nós contra ataca, quero dar murro na fome não em ponta de faca, quero mudar minha conduta mas minha é fraca, visitei meu pai no UPA, levei 30 prata, comprei um maço de cigarro, uma cerva barata, me disseram no fim tu morre mas não me deram data.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+            </div>
+            <div class="skillVideo_p">
+                <video src="skills_videos/ability_0029_P1.webm" type="video/webm" id="video_p" class="" loop></video>
+                <video src="skills_videos/ability_0029_Q1.webm" type="video/webm" id="video_q" class="videoDisplay" loop></video>
+                <video src="skills_videos/ability_0029_W1.webm" type="video/webm" id="video_w" class="videoDisplay" loop></video>
+                <video src="skills_videos/ability_0029_E1.webm" type="video/webm" id="video_e" class="videoDisplay" loop></video>
+                <video src="skills_videos/ability_0029_R1.webm" type="video/webm" id="video_r" class="videoDisplay" loop></video>
 
-<div class="modal fade" id="modalTexts3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Sobre Mariana</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body bodyMTxt">
-        <p id="modaltxt">Mariana, não só uma Ana que resolveu se aventurar no mar, mari tem tudo a ver com ‘amar’, as vezes seus olhinhos escuros me fazem sentar no muro a observar, que por mais que o navio esteja a naufragar, ela se dispõe a tentar, que podem passar 7 meses, e que 7 noites de choro depois, vai me perdoar, não pare de ser mari, não pare até que a última ferida sare, não pare. Não é só um nome, quando chega a notificação logo a tristeza some, cê tem super poderes, e nem é o super homem, é super chata, e quando ouvi uns " não sei pq tu n se mata" veio correndo e me pôs na maca, me diz palavras de conforto e me abraça, sempre ri das minhas piadas mesmo que não tenham graça, sempre dá o máximo de si sem esperar nada em troca, tua importância pra mim é tão grande, e nosso laço não pode ser cortado por faca, som da amizade que não se esvai, brilho que não se apaga, o lado amizade do meu coração está inteiramente ocupado por mariana e não há vagas.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
+            </div>
+        </section>
     </div>
-  </div>
-</div>
-<div class="modal fade" id="modalTexts4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Opostos?</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body bodyMTxt">
-        <p id="modaltxt">
-            Eu não sabia e não sei explicar o que senti quando teu corpo veio de encontro ao meu, quando entramos no mesmo ritmo, e que mesmo por pouco tempo fomos tão iguais, tão parecidos, com as mesmas intenções talvez, somos os polos e sabemos disso, somos diferente em diversos aspectos mas nossa dor era parecida, parecia tão errado estar conectado a alguém por conta da dor, a dor nunca traz nada bom, vivemos cada dia tentando nos livrar dela, mas de alguma forma a dor fez com que nos encontrássemos, e em pouco tempo aconteceu tanta coisa, tanta coisa louca, e essa loucura toda me fazia sentir bem, mas meu bem eu procurava um porquê, uma razão pra isso tudo, tão confuso, acontecer, eu já tentei tantas vezes escrever sobre você, mas é difícil sem te conhecer, tu és enigma a desvendar, mistério a ser descoberto, quando disseste que eu te conhecia tão pouco, eu parei um pouco, e pensei, como pode alguém que nem conheço me fazer tão bem?
-Dentre todas perguntas que fazia a mim mesmo, o motivo de isso tudo acontecer era a principal, uma pergunta que não tinha resposta, como podia o 1 e o 0 se encontrarem, como poderia o + e o - estarem juntos, nunca acreditei nessa de "oposto se atraem", por que vamos querer alguém tão diferente de nós por perto? Então percebi, que somos Eclipse, o sol, e a lua, a noite ou o dia em que o dia e a noite se encontram, unidos de alguma forma nossa sombra e nossa luz, isso tudo sem sabermos nada um sobre o outro, enfim vim a saber, que aconteceu, porque tinha que acontecer.
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+    <div class="areaLore" id="areaLore">
+        <div class="lore">
+            <h1 class="loreTitle">
+                TWITCH
+            </h1>
+            <P class="loreDescription">
+                Um roedor praguento de nascença, um connoisseur por paixão, Twitch é uma ratazana paranóica e mutante que anda em duas patas
+                e percorre os cantos mais nojentos de Zaun em busca dos tesouros a que realmente dá valor. Armado com uma
+                besta envenenada, Twitch não tem medo de sujar suas patas enquanto constrói um trono de reclusão em seu reino
+                de imundice e planeja o desmoronar da humanidade.
+            </P>
 
-    <script src="vendor/jQuery/jquery.min.js"></script>
-    <script src="vendor/popper.min.js"></script>
-    <script src="vendor/bootstrap/bootstrap.min.js"></script>
-    <script src="JS/script.js"></script>
+        </div>
+        <div class="contoRato" id="loreBtn">
+            <p class="contoRatoTxt">
+                Lore Completa
+            </p>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <h1 class="modal-title">
+                    Evitar Confronto
+                </h1>
+                <div class="blackBox">
+                <span class="close-modal">X
+                </span></div>
+                <p class="modal-text">
+                    Relatório de incidente C.O.L.M.E.I.A. Código em violação: Homicida industrial Situação do caso: não resolvido Agente responsável:
+                    Rol, P. Equipe respondeu ao relato de atividade suspeita e criminosa; prosseguiu à averiguação da fossa,
+                    Setor 90TZ. Setor 90TZ notavelmente deserto. Em seu lugar: um ralo, fumaça e gases tóxicos. Interrogatórios
+                    com a segurança privada indicam uma carência urgente de mais segurança privada. A equipe de resposta
+                    desceu pelo ralo. Os restos tóxicos derreteram o material e criaram destroços. Dois sobreviventes localizados,
+                    um parcialmente liquefeito e pingando da calçada. Seis defuntos encontrados em meio aos destroços, três
+                    deles apenas parcialmente; dois parecem estar lá desde antes do incidente. As causas das mortes incluem
+                    desaceleração aguda, liquefação cáustica e/ou ferimentos fatais de besta. Não está claro se a destruição
+                    do laboratório foi a intenção em si do suspeito ou uma tentativa de cobrir seus rastros. Sobrevivente
+                    1 (Ra Qintava, pesquisador) trazido para interrogatório, mas incapaz de dar seu posicionamento devido
+                    a 1) stress pós-traumático e 2) liquefação da língua e da mandíbula inferior. Testes toxicológicos e
+                    prova da prótese em aguardo. ''Busca e Resgate'' descobriu um possível barraco construído com restos.
+                    Itens recuperados incluem: 57 romances românticos ensopados, ilegíveis, com edições feitas a giz de cera
+                    108 garrafas, sem rótulo (possíveis restos tóxicos ou restos de xampu) 90 quilogramas de goma de mascar
+                    (possível projeto artístico de instalação) 1 jarra de unhas do pé, rotuladas por dedo, data e humor Sobrevivente
+                    2 (Valori Olant, analista de lodo) em recuperação; recobrou a lucidez após prolongada eletrocussão terapêutica.
+                    Trecho da declaração transcrita abaixo: V.O.: ALGO PRECISA SER FEITO - ENFERMEIRA: Ela perdeu muito sangue...
+                    P.R.: Seus colegas de trabalho perderam bem mais que isso... V.O.: AQUELA COISA AINDA ESTÁ POR AÍ! P.R.:
+                    Senhora, preciso que se concentre. Me diga com o que ele se parecia. V.O.: COM UM RATO! (pausa) ENFERMEIRA:
+                    Com o que? P.R.: Quer dizer, um ratinho? Com olhos redondos? E cara de... rato? V.O.: COM UM RATO AMALDIÇOADAMENTE
+                    GIGANTESCO! (pausa) ARMADO COM UMA BESTA! (pausa) P.R.: (para a enfermeira) A anestesia dela precisa
+                    ser ajustada. V.O.: VOCÊS NÃO ESTÃO OUVINDO! É UM RATO GIGANTE PSICOPATA E HOMICIDA! DE COLETE! P.R.:
+                    Enfermeira? ENFERMEIRA: (fazendo uma aplicação intravenosa de sedativos em Olant) Pronto. [EDITADO] V.O.:
+                    Éramos apenas cientistas, trabalhando para transformar lixo humano em papinha barata para bebês... [EDITADO]
+                    Eu vi - não sei como descrever - este rato gigante e LOUCO, gritando conosco! Derrubando frascos! Cuspindo
+                    em nossa comida! [EDITADO] O laboratório estava selado. Havia lixo industrial por toda parte. Não havia
+                    por onde escapar. [EDITADO] Eu acordei no escuro. Bom... O ácido tinha derretido os meus olhos. Mas eu
+                    conseguia sentir o CHEIRO do bastardo a poucos centímetros do meu rosto. Ele disse ''NINGUÉM ROUBA O
+                    SUCO DO TWITCH!'', riu como um maníaco e fugiu... Eu ainda posso sentir seu cheiro em minha mente. EU
+                    AINDA POSSO SENTI-LO-- Fim da transcrição. Deste ponto em diante a vítima só gritou e ainda não parou.
+                    [ATUALIZAÇÃO: Qintava, testemunho escrito] Sumário do suspeito, conforme relatos: NOME / NOMES ALTERNATIVOS:
+                    ''Twitch'' GÊNERO: Macho (não confirmado) IDADE: Desconhecida ALTURA: 1,44m (curvado) PESO:
+                    <
+                        44,9 Kg (úmido) FEIÇÕES EM DESTAQUE: É um rato gigante STATUS: Em liberdade, armado, extremamente perigoso,
+                        NÃO ENFRENTAR C.O.L.M.E.I.A. - Forçando o progresso! </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="all.js"></script>
 </body>
 
 </html>
