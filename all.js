@@ -212,6 +212,7 @@ $(document).ready(function(){
         $('.card-container').addClass('container-move');
         $("#cardPadraoFull").addClass('hidden-card')
         $("#cardLocoFull").addClass('hidden-card')
+        $('.rune-page').addClass('visible-runepage');
         $('.backHover').addClass('back-visible');
     });
     $('#cardPadrao').click(function(){
@@ -220,6 +221,7 @@ $(document).ready(function(){
         $('.card-container').addClass('container-move');
         $("#cardJungleFull").addClass('hidden-card')
         $("#cardLocoFull").addClass('hidden-card')
+        $('.rune-page').addClass('visible-runepage')
         $('.backHover').addClass('back-visible');
     });
     $('#cardAtkSpeed').click(function(){
@@ -229,6 +231,7 @@ $(document).ready(function(){
         $("#cardPadraoFull").addClass('hidden-card')
         $("#cardJungleFull").addClass('hidden-card')
         $('.backHover').addClass('back-visible');
+        $('.rune-page').addClass('visible-runepage');
     });
     $(".backHover").click(function(){
         $('#cardPadraoFull').removeClass('hidden-card left-animate');
@@ -238,6 +241,7 @@ $(document).ready(function(){
         $('#cardJungle').removeClass('hidden-card low-height');
         $('#cardPadrao').removeClass('hidden-card low-height');
         $('#cardAtkSpeed').removeClass('hidden-card low-height')
+        $('.rune-page').removeClass('visible-runepage');
         $('.backHover').removeClass('back-visible');    
     });
 });
@@ -338,7 +342,7 @@ var background_image_parallax = function($object, multiplier){
   $(window).scroll(function() {
     var height = $(window).scrollTop();
     console.log(height);
-    if(height  < 600 || height > 1650) {
+    if(height  < 600 || height > 1400) {
       var stopVideo_p = document.getElementById("video_p");
       stopVideo_p.pause();
       stopVideo_p.currentTime = 0;
