@@ -26,7 +26,7 @@
     <title>League of Twitch</title>
 </head>
 
-<body>
+<body id="body">
     <div class="navbar" id="navbar">
         <a class="logo" href="#" id="scroll">
             <img src="img/zaun_emblem.png" class="imgLogo">
@@ -45,7 +45,7 @@
             <li id="loreScroll">
                 História do Rato
             </li>
-            <li>
+            <li id="buildScroll">
                 Builds do Rato
             </li>
             <li>
@@ -63,8 +63,8 @@
                     <svg role="img" xmlns="http://www.w3.org/2000/svg">
                         <title>Utility</title>
                         <desc>Utilities for the team</desc>
-                        <circle class="circle-background" />
-                        <circle class="circle-foreground" />
+                        <circle cx="50%" r="90px" cy="50%" class="circle-background" />
+                        <circle cx="50%" r="90px" cy="50%" class="circle-foreground" />
                     </svg>
                     <figcaption>25%</figcaption>
                 </figure>
@@ -75,8 +75,8 @@
                     <svg role="img" xmlns="http://www.w3.org/2000/svg">
                         <title>Mobility</title>
                         <desc>Movement Speed</desc>
-                        <circle class="circle-background" />
-                        <circle class="circle-foreground" />
+                        <circle cx="50%" r="90px" cy="50%" class="circle-background" />
+                        <circle cx="50%" r="90px" cy="50%" class="circle-foreground" />
                     </svg>
                     <figcaption>75%</figcaption>
                 </figure>
@@ -87,8 +87,8 @@
                     <svg role="img" xmlns="http://www.w3.org/2000/svg">
                         <title>Damage</title>
                         <desc>Dano de ataque</desc>
-                        <circle class="circle-background" />
-                        <circle class="circle-foreground" />
+                        <circle cx="50%" r="90px" cy="50%" class="circle-background" />
+                        <circle cx="50%" r="90px" cy="50%" class="circle-foreground" />
                     </svg>
                     <figcaption>100%</figcaption>
                 </figure>
@@ -99,8 +99,8 @@
                     <svg role="img" xmlns="http://www.w3.org/2000/svg">
                         <title>Toughness</title>
                         <desc>Defense</desc>
-                        <circle class="circle-background" />
-                        <circle class="circle-foreground" />
+                        <circle cx="50%" r="90px" cy="50%" class="circle-background" />
+                        <circle cx="50%" r="90px" cy="50%" class="circle-foreground" />
                     </svg>
                     <figcaption>25%</figcaption>
                 </figure>
@@ -111,8 +111,8 @@
                     <svg role="img" xmlns="http://www.w3.org/2000/svg">
                         <title>Control</title>
                         <desc>Control Abilities</desc>
-                        <circle class="circle-background" />
-                        <circle class="circle-foreground" />
+                        <circle cx="50%" r="90px" cy="50%" class="circle-background" />
+                        <circle cx="50%" r="90px" cy="50%" class="circle-foreground" />
                     </svg>
                     <figcaption>50%</figcaption>
                 </figure>
@@ -261,8 +261,9 @@
                     Evitar Confronto
                 </h1>
                 <div class="blackBox">
-                <span class="close-modal">X
-                </span></div>
+                    <span class="close-modal">X
+                    </span>
+                </div>
                 <p class="modal-text">
                     Relatório de incidente C.O.L.M.E.I.A. Código em violação: Homicida industrial Situação do caso: não resolvido Agente responsável:
                     Rol, P. Equipe respondeu ao relato de atividade suspeita e criminosa; prosseguiu à averiguação da fossa,
@@ -296,10 +297,61 @@
                     AINDA POSSO SENTI-LO-- Fim da transcrição. Deste ponto em diante a vítima só gritou e ainda não parou.
                     [ATUALIZAÇÃO: Qintava, testemunho escrito] Sumário do suspeito, conforme relatos: NOME / NOMES ALTERNATIVOS:
                     ''Twitch'' GÊNERO: Macho (não confirmado) IDADE: Desconhecida ALTURA: 1,44m (curvado) PESO:
-                    <
-                        44,9 Kg (úmido) FEIÇÕES EM DESTAQUE: É um rato gigante STATUS: Em liberdade, armado, extremamente perigoso,
-                        NÃO ENFRENTAR C.O.L.M.E.I.A. - Forçando o progresso! </p>
+                    < 44,9 Kg (úmido) FEIÇÕES EM DESTAQUE: É um rato gigante STATUS: Em liberdade, armado, extremamente perigoso, NÃO ENFRENTAR
+                        C.O.L.M.E.I.A. - Forçando o progresso! </p>
             </div>
+        </div>
+    </div>
+    <div class="areaBuilds">
+        <div class="backHover">
+            <div class="backBuilds" id="backBuilds">
+                <div class="line-one"></div>
+                <div class="line-two"></div>
+                <div class="line-three"></div>
+            </div>
+        </div>
+        <div class="cardGroup">
+            <div class="card-build" id="cardJungleFull">
+                <div class="card-title">
+                    <p>
+                        Twitch Jungle
+                    </p>
+                </div>
+                <img src="img/twitch_jg.jpg" alt="twitch_skin_gangster" id="cardJungle" />
+                <div class="card-container">
+                    <p class="card-description">
+                        Build focada em dano explosivo, perfeita para ganks rapidos e invasões na selva
+                    </p>
+                </div>
+            </div>
+            <div class="card-build" id="cardPadraoFull">
+                <div class="card-title">
+                    <p>
+                        ADC Padrão
+                    </p>
+                </div>
+                <img src="img/card_default.jpg" alt="twitch_default_skin" id="cardPadrao" />
+                <div class="card-container">
+                    <p class="card-description">
+                        Build padrão para atirador
+                    </p>
+                </div>
+            </div>
+            <div class="card-build" id="cardLocoFull">
+                <div class="card-title">
+                    <p>
+                        ATK Speed
+                    </p>
+                </div>
+                <img src="img/twitch_louco.jpg" alt="twitch" id="cardAtkSpeed" />
+                <div class="card-container">
+                    <p class="card-description">
+                        Build baseada em DPS, deixando de lado o dano bruto focando a velocidade de ataque
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="rune-page">
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
