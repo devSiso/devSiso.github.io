@@ -242,7 +242,8 @@ $(document).ready(function(){
         $('#cardPadrao').removeClass('hidden-card low-height');
         $('#cardAtkSpeed').removeClass('hidden-card low-height')
         $('.rune-page').removeClass('visible-runepage');
-        $('.backHover').removeClass('back-visible');    
+        $('.backHover').removeClass('back-visible');
+        $('.speels').removeClass('speels-visibility');    
     });
 });
 $(document).ready(function () {
@@ -336,13 +337,13 @@ var background_image_parallax = function($object, multiplier){
         $object.css({"background-position" : bg_css });
     });
   };
-  background_image_parallax($(".homePage"),1.3);
+  background_image_parallax($(".homePage"),1.4);
   background_image_parallax($(".areaLore"),1.1);
 
   $(window).scroll(function() {
     var height = $(window).scrollTop();
     console.log(height);
-    if(height  < 600 || height > 1400) {
+    if(height  < 600 || height > 1500) {
       var stopVideo_p = document.getElementById("video_p");
       stopVideo_p.pause();
       stopVideo_p.currentTime = 0;
@@ -374,4 +375,27 @@ var background_image_parallax = function($object, multiplier){
       var stopVideo_r = document.getElementById('video_r');
       stopVideo_r.play();
     }
+});
+$(document).ready(function(){
+    $('#cardJungleFull').click(function(){
+        $('.rune-jungle').addClass('rune-visibility');
+        $('.rune-padrao').removeClass('rune-visibility');
+        $('.rune-atkSpeed').removeClass('rune-visibility');
+        $('.speels-jungle').addClass('speels-visibility');
+        $('.speels-padrao').removeClass('speels-visibility');
+    });
+    $('#cardPadraoFull').click(function(){
+        $('.rune-padrao').addClass('rune-visibility');
+        $('.rune-jungle').removeClass('rune-visibility');
+        $('.rune-atkSpeed').removeClass('rune-visibility');
+        $('.speels-padrao').addClass('speels-visibility');
+        $('.speels-jungle').removeClass('speels-visibility');
+    });
+    $('#cardLocoFull').click(function(){
+        $('.rune-atkSpeed').addClass('rune-visibility');
+        $('.rune-jungle').removeClass('rune-visibility');
+        $('.rune-padrao').removeClass('rune-visibility');
+        $('.speels-padrao').addClass('speels-visibility');
+        $('.speels-jungle').removeClass('speels-visibility');
+    });
 });
