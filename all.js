@@ -243,7 +243,10 @@ $(document).ready(function(){
         $('#cardAtkSpeed').removeClass('hidden-card low-height')
         $('.rune-page').removeClass('visible-runepage');
         $('.backHover').removeClass('back-visible');
-        $('.speels').removeClass('speels-visibility');    
+        $('.speels').removeClass('speels-visibility');
+        $('.tableArea').removeClass('table-visibility'); 
+        $('.tableTitle').removeClass('table-visibility');
+        $('.areaItem').removeClass('item-visibility');   
     });
 });
 $(document).ready(function () {
@@ -269,9 +272,15 @@ $(document).ready(function () {
         videoP.play();
     });
     $("#buildScroll").click(function () {
+        if($('.speels').hasClass('speels-visibility')){
+            $('html, body').animate({
+                scrollTop: $('.speel-title').offset().top - 100
+            }, 1700);
+        }else{
         $('html, body').animate({
             scrollTop: $('.card-title').offset().top - 100
         }, 1700);
+    }
     });
     $("#skillsHere").click(function () {
         $('html, body').animate({
@@ -342,8 +351,7 @@ var background_image_parallax = function($object, multiplier){
 
   $(window).scroll(function() {
     var height = $(window).scrollTop();
-    console.log(height);
-    if(height  < 600 || height > 1500) {
+    if(height  < 400 || height > 1275) {
       var stopVideo_p = document.getElementById("video_p");
       stopVideo_p.pause();
       stopVideo_p.currentTime = 0;
@@ -376,26 +384,59 @@ var background_image_parallax = function($object, multiplier){
       stopVideo_r.play();
     }
 });
+$(window).on('hide.visibility', function() {
+  $('#video_p, #video_q, #video_w, video_e, video_r').get(0).pause();
+});
+$(window).blur(function(){
+  $('#video_p, #video_q, #video_w, video_e, video_r').get(0).pause();
+});
+$(window).focus(function(){
+  $('#video_p, #video_q, #video_w, video_e, video_r').get(0).play();
+});
 $(document).ready(function(){
     $('#cardJungleFull').click(function(){
+        $('html, body').animate({
+            scrollTop: $('.speel-title').offset().top - 100
+        }, 700);
         $('.rune-jungle').addClass('rune-visibility');
         $('.rune-padrao').removeClass('rune-visibility');
         $('.rune-atkSpeed').removeClass('rune-visibility');
         $('.speels-jungle').addClass('speels-visibility');
         $('.speels-padrao').removeClass('speels-visibility');
+        $('.tableArea').addClass('table-visibility');
+        $('.tableTitle').addClass('table-visibility');
+        $('.buildJungle').addClass('item-visibility');
+        $('.buildPadrao').removeClass('item-visibility');
+        $('.atkSpeedBuild').removeClass('item-visibility');
     });
     $('#cardPadraoFull').click(function(){
+        $('html, body').animate({
+            scrollTop: $('.speel-title').offset().top - 100
+        }, 700);
+        $('.tableArea').addClass('table-visibility');
         $('.rune-padrao').addClass('rune-visibility');
         $('.rune-jungle').removeClass('rune-visibility');
         $('.rune-atkSpeed').removeClass('rune-visibility');
         $('.speels-padrao').addClass('speels-visibility');
         $('.speels-jungle').removeClass('speels-visibility');
+        $('.tableTitle').addClass('table-visibility');
+        $('.buildPadrao').addClass('item-visibility');
+        $('.buildJungle').removeClass('item-visibility');
+        $('.atkSpeedBuild').removeClass('item-visibility');
     });
     $('#cardLocoFull').click(function(){
+        $('html, body').animate({
+            scrollTop: $('.speel-title').offset().top - 100
+        }, 700);
         $('.rune-atkSpeed').addClass('rune-visibility');
         $('.rune-jungle').removeClass('rune-visibility');
         $('.rune-padrao').removeClass('rune-visibility');
         $('.speels-padrao').addClass('speels-visibility');
         $('.speels-jungle').removeClass('speels-visibility');
+        $('.tableArea').addClass('table-visibility');
+        $('.tableTitle').addClass('table-visibility');
+        $('.atkSpeedBuild').addClass('item-visibility');
+        $('.buildPadrao').removeClass('item-visibility');
+        $('.buildJungle').removeClass('item-visibility');
     });
 });
