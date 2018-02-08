@@ -282,6 +282,11 @@ $(document).ready(function () {
         }, 1700);
     }
     });
+    $('#jogadasScroll').click(function(){
+        $('html, body').animate({
+            scrollTop: $('.jogadas-title').offset().top - 350
+        },2000);
+    });
     $("#skillsHere").click(function () {
         $('html, body').animate({
             scrollTop: $('#skillsArea').offset().top - 100
@@ -348,6 +353,7 @@ var background_image_parallax = function($object, multiplier){
   };
   background_image_parallax($(".homePage"),1.4);
   background_image_parallax($(".areaLore"),1.1);
+  background_image_parallax($(".jogadas-area"),1.010);
 
   $(window).scroll(function() {
     var height = $(window).scrollTop();
