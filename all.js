@@ -284,7 +284,7 @@ $(document).ready(function () {
     });
     $('#jogadasScroll').click(function(){
         $('html, body').animate({
-            scrollTop: $('.jogadas-title').offset().top - 350
+            scrollTop: $('.jogadas-title').offset().top - 400
         },2000);
     });
     $("#skillsHere").click(function () {
@@ -338,7 +338,177 @@ $(document).keydown(function(e) {
       }
       return true;
 });
-
+$('.wrap').click(function(){
+  $('.modalVideo').addClass('modal-video-visible');
+  $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/NegpOiWYAF4?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+  body.style.overflow="hidden";
+});
+$('.close-modal-video').click(function(){
+    $('.modalVideo').removeClass('modal-video-visible');
+    $('.modal-video-content iframe').remove();
+    body.style.overflow="";
+});
+$('.wrap-2').click(function(){
+    $('.modalVideo').addClass('modal-video-visible');
+    body.style.overflow="hidden";
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/KxMU_CfsO00?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-3').click(function(){
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/x5x3ix3EsWg?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+    body.style.overflow="hidden";
+})
+$('.wrap-4').click(function(){
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/JEnfZs7X2Vs?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+    body.style.overflow="hidden";
+});
+$('.wrap-5').click(function(){
+    $('.modalVideo').addClass('modal-video-visible');
+    body.style.overflow="hidden";
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/RE-z4SqWneE?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-6').click(function(){
+    $('.modalVideo').addClass('modal-video-visible');
+    body.style.overflow="hidden";
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/aq0IGj-hBuk?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-7').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/NYrqXPpKCpc?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-8').click(function(){
+    body.style.overflow="hidden";   
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/AS3uu6ImPag?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-9').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/Uh1LvRp2UWI?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-10').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/QLJi_3Vz6OY?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-11').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/EzOfkBtxBvQ?rel=0&amp;controls=1&amp;showinfo=0&amp;start=10&amo;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-12').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/XWfo_eZ5sf0?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-13').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/O6AWsqKNSsM?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-14').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/_DsXWCaq78E?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-15').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/_AL1k0Gw7F8?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-16').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/AJXViSslvsY?rel=0&amp;controls=0&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-17').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/VOaePF9tuvU?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-18').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/E1g3fFwmrl8?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-19').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/40up33DDvFw?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-20').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/l6mjb30APQg?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-21').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/KInXo0ESPiE?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-22').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/JHJG0f_A4Tk?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-23').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/sezWHZ68CN8?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-24').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/sBzhytErvjM?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-25').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/5p3gQvGWjL0?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-26').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/_mufkZnThVM?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-27').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/-7bz-ZJhtZo?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-28').click(function(){
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/EZDP3XuR3Ow?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-29').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/Shk98y-xtWw?rel=0&amp;controls=1&amp;showinfo=0&mp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-30').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/p1vD3ZD2Or8?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-31').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/sNH8TKRME8I?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$('.wrap-32').click(function(){
+    body.style.overflow="hidden";
+    $('.modalVideo').addClass('modal-video-visible');
+    $(".modal-video-content").append($("<iframe />").attr("src", "https://www.youtube.com/embed/V-4cgYvgjAE?rel=0&amp;controls=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1")).dialog({dialogoptions});
+});
+$(window).on('keyup', function(e){
+    if(e.keyCode == 27 || e.keyCode == 8) {
+        $('.modalVideo').removeClass('modal-video-visible');
+        body.style.overflow="";
+        $('.modal-video-content iframe').remove();
+    }
+});
 });
 var background_image_parallax = function($object, multiplier){
     multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
