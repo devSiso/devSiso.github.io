@@ -251,11 +251,13 @@ $(document).ready(function(){
 });
 $(document).ready(function () {
     $('#loreScroll').click(function () {
+        $('.menu').removeClass('menu-visible-active');
+        $('.menu-hamburger').removeClass('x-burger');
         $('html, body').animate({
             scrollTop: $('.loreTitle').offset().top - 200
         }, 1700);
     });
-    $('#scroll').click(function () {
+        $('#scroll').click(function () {
         $('html, body').animate({
             scrollTop: 0
         }, 700);
@@ -272,6 +274,8 @@ $(document).ready(function () {
         videoP.play();
     });
     $("#buildScroll").click(function () {
+        $('.menu').removeClass('menu-visible-active');
+        $('.menu-hamburger').removeClass('x-burger');
         if($('.speels').hasClass('speels-visibility')){
             $('html, body').animate({
                 scrollTop: $('.speel-title').offset().top - 100
@@ -283,6 +287,8 @@ $(document).ready(function () {
     }
     });
     $('#jogadasScroll').click(function(){
+        $('.menu').removeClass('menu-visible-active');
+        $('.menu-hamburger').removeClass('x-burger');
         $('html, body').animate({
             scrollTop: $('.jogadas-title').offset().top - 400
         },2000);
@@ -509,25 +515,38 @@ $(window).on('keyup', function(e){
         $('.modal-video-content iframe').remove();
     }
 });
+$('#menu-burger').on('click', function(){
+    console.time('g');
+    if($('.menu-hamburger').hasClass('x-burger') && $('.menu').hasClass('menu-visible-active')){
+        $('.menu-hamburger').removeClass('x-burger');
+        $('.menu').removeClass('menu-visible-active');
+    }else{
+    $('.menu').addClass('menu-visible-active');
+    $('.menu-hamburger').addClass('x-burger');
+    }
+    console.timeEnd('g');    
 });
-var background_image_parallax = function($object, multiplier){
+});
+if ($(window).width() > 375) {
+  console.log($(window).width());
+  var background_image_parallax = function ($object, multiplier) {
     multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-      multiplier = 1 - multiplier;
+    multiplier = 1 - multiplier;
     var $doc = $(document);
-    $object.css({"background-attatchment" : "fixed"});
-      $(window).scroll(function(){
-        var from_top = $doc.scrollTop(),
-            bg_css = '0px ' +(multiplier * from_top) + 'px';
-        $object.css({"background-position" : bg_css });
+    $object.css({ "background-attatchment": "fixed" });
+    $(window).scroll(function () {
+      var from_top = $doc.scrollTop(),
+        bg_css = '0px ' + (multiplier * from_top) + 'px';
+      $object.css({ "background-position": bg_css });
     });
   };
-  background_image_parallax($(".homePage"),1.4);
-  background_image_parallax($(".areaLore"),1.1);
-  background_image_parallax($(".jogadas-area"),1.010);
+  background_image_parallax($(".homePage"), 1.4);
+  background_image_parallax($(".areaLore"), 1.1);
+  background_image_parallax($(".jogadas-area"), 1.010);
 
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     var height = $(window).scrollTop();
-    if(height  < 400 || height > 1275) {
+    if (height < 400 || height > 1275) {
       var stopVideo_p = document.getElementById("video_p");
       stopVideo_p.pause();
       stopVideo_p.currentTime = 0;
@@ -535,7 +554,7 @@ var background_image_parallax = function($object, multiplier){
       var stopVideo_q = document.getElementById('video_q');
       stopVideo_q.pause();
       stopVideo_q.currentTime = 0;
-      
+
       var stopVideo_w = document.getElementById('video_w');
       stopVideo_w.pause();
       stopVideo_w.currentTime = 0;
@@ -547,7 +566,7 @@ var background_image_parallax = function($object, multiplier){
       var stopVideo_r = document.getElementById('video_r');
       stopVideo_r.pause();
       stopVideo_r.currentTime = 0;
-    }else{
+    } else {
       var stopVideo_p = document.getElementById("video_p");
       stopVideo_p.play();
       var stopVideo_q = document.getElementById('video_q');
@@ -559,16 +578,17 @@ var background_image_parallax = function($object, multiplier){
       var stopVideo_r = document.getElementById('video_r');
       stopVideo_r.play();
     }
-});
-$(window).on('hide.visibility', function() {
-  $('#video_p, #video_q, #video_w, video_e, video_r').get(0).pause();
-});
-$(window).blur(function(){
-  $('#video_p, #video_q, #video_w, video_e, video_r').get(0).pause();
-});
-$(window).focus(function(){
-  $('#video_p, #video_q, #video_w, video_e, video_r').get(0).play();
-});
+  });
+  $(window).on('hide.visibility', function () {
+    $('#video_p, #video_q, #video_w, video_e, video_r').get(0).pause();
+  });
+  $(window).blur(function () {
+    $('#video_p, #video_q, #video_w, video_e, video_r').get(0).pause();
+  });
+  $(window).focus(function () {
+    $('#video_p, #video_q, #video_w, video_e, video_r').get(0).play();
+  });
+}
 $(document).ready(function(){
     $('#cardJungleFull').click(function(){
         $('html, body').animate({
